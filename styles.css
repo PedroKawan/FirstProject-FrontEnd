@@ -35,11 +35,17 @@ body {
     text-align: center;
 }
 
-#header-principal a {
+#header-principal nav a {
     color: #fff;
+    background-color: rgba(0, 0, 0, 15%);
     text-decoration: none;
+    border-radius: 10px;
     display: inline-block;
     padding: 16px;
+}
+
+#header-principal nav a:hover {
+    background-color: rgba(0, 0, 0, 50%);
 }
 
 #header-principal h1 {
@@ -49,6 +55,7 @@ body {
     font-size: 40px;
     font-style: italic;
     text-align: center;
+    text-transform: uppercase;
     text-shadow: 0.1em 0.01em #000;
 
     margin-top: 200px;
@@ -77,10 +84,12 @@ main {
 .section-main {
     background-color: #eee;
     width: 95%;
+    min-width: 500px;
     border-radius: 10px;
     padding: 20px;
     box-sizing: border-box;
     margin: 20px auto;
+    
 }
 
 .section-main h2{
@@ -100,13 +109,12 @@ main {
 .section-main footer p {
     height: 35px;
     text-indent: 0px;
-    text-align: left;
 }
 
 .section-main footer a {
     text-align: center;
-    padding-top: 10px;
-    width: 100px;
+    padding: 10px 10px 0;
+    width: fit-content;
     display: inline-block;
     background-color: #ccc;
     height: 30px;
